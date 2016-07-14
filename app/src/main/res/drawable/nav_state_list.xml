@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Item checked -->
+        <item android:color="#313189" android:state_checked="true" />
+        <!-- Item pressed -->
+        <item android:color="#318931" android:state_pressed="true" />
+        <!-- Item default -->
+        <item android:color="#893131" />
+    </selector>
+</shape>
