@@ -3,19 +3,19 @@ package br.com.market.androidmarket.models;
 /**
  * Created by Douglas on 13/07/2016.
  */
-public class Contact {
+public class User {
 
     private String name;
     private int photo;
     private boolean alert;
 
-    public Contact(String name, int photo, boolean alert) {
+    public User(String name, int photo, boolean alert) {
         this.name = name;
         this.photo = photo;
         this.alert = alert;
     }
 
-    public Contact(String name, boolean alert) {
+    public User(String name, boolean alert) {
         this.name = name;
         this.alert = alert;
     }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_sales"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_sale_description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_535353"
+        android:textSize="16sp"
+        tools:text="Como decorar uma festa infantil maravilhosa" />
+
+    <TextView
+        android:id="@+id/tv_sale_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sale_description"
+        android:layout_marginTop="10dp"
+        tools:text="id 30294080 - 11/01/2016" />
+
+    <ImageView
+        android:id="@+id/iv_sale_alert"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ico_alert"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_sale_value"
+        style="@style/OpenSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/blue_4982c5"
+        android:textSize="16sp"
+        tools:text="R$1.035,00" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_contact"
+    android:layout_width="100dp"
+    android:layout_height="140dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/container_circle_contact"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_shape">
+
+        <TextView
+            android:id="@+id/tv_letter_contact"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:visibility="gone"
+            tools:text="H" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_photo_contact"
+            android:src="@drawable/profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_alert"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ico_alert"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_name_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_circle_contact"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAlignment="center"
+        tools:layout_centerHorizontal="true"
+        tools:text="contact seabra" />
+
+</RelativeLayout>

@@ -3,6 +3,13 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <string name="fragment_message">Mensagens</string>
+    <string name="fragment_sales">Minhas Vendas</string>
+    <string name="fragment_profile">My Profile</string>
+
+    <!-- My Profile -->
+    <string name="my_profile_extract">Seu saldo atual e de:</string>
+    <string name="my_profile_message">Messagens recentes</string>
 </resources>

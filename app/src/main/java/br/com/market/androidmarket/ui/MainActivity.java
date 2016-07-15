@@ -17,6 +17,8 @@ import br.com.market.androidmarket.services.AndroidMarketRepository;
 import br.com.market.androidmarket.services.Callback;
 import br.com.market.androidmarket.services.responses.UserAccountResponse;
 import br.com.market.androidmarket.ui.message.MessageFragment;
+import br.com.market.androidmarket.ui.profile.ProfileFragment;
+import br.com.market.androidmarket.ui.sales.SalesFragment;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -50,6 +52,8 @@ public class MainActivity extends BaseActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         loadUserAccount();
+
+        onNavigationItemSelected(navigationView.getMenu().getItem(0));
     }
 
     private void loadUserAccount(){
@@ -118,12 +122,14 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            replaceFragment(MessageFragment.newInstance(), R.id.container_fragment, "my_sales_frag", false);
-            //changeTitleToolbar(R.string.frag_my_sales);
+            replaceFragment(MessageFragment.newInstance(), R.id.container_fragment, "message_fragment", false);
+            changeTitleToolbar(R.string.fragment_message);
         } else if (id == R.id.nav_gallery) {
-
+            replaceFragment(SalesFragment.newInstance(), R.id.container_fragment, "message_fragment", false);
+            changeTitleToolbar(R.string.fragment_sales);
         } else if (id == R.id.nav_slideshow) {
-
+            replaceFragment(ProfileFragment.newInstance(), R.id.container_fragment, "message_fragment", false);
+            changeTitleToolbar(R.string.fragment_profile);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
