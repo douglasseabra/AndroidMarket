@@ -56,6 +56,45 @@
 
             </RelativeLayout>
 
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:paddingTop="15dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tv_info_messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/my_profile_message"
+                    android:textColor="@color/gray_535353" />
+
+                <TextView
+                    android:id="@+id/tv_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_badge"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    tools:text="+10" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_grid_message"
+                    android:scrollbars="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/tv_info_messages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_sales"
                 android:layout_width="match_parent"

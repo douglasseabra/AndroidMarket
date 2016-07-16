@@ -5,6 +5,15 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Menu  -->
+    <string name="menu_sales">Minhas Vendas</string>
+    <string name="menu_products">Meus Produtos</string>
+    <string name="menu_menbers">Afiliados</string>
+    <string name="menu_messages">Mensagens</string>
+    <string name="menu_notifications">Notificações</string>
+    <string name="menu_account">Minha conta</string>
+    <string name="menu_about">Sobre o App</string>
+
     <string name="fragment_message">Mensagens</string>
     <string name="fragment_sales">Minhas Vendas</string>
     <string name="fragment_profile">My Profile</string>
