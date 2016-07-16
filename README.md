@@ -19,5 +19,5 @@ compile 'com.android.support:design:23.4.0'
 compile 'com.jakewharton:butterknife:7.0.1'
 compile 'uk.co.chrisjenx:calligraphy:2.1.0'
 compile 'de.hdodenhof:circleimageview:2.1.0'
-compile('com.mikepenz:materialdrawer:4.6.4@aar') 
+compile 'com.mikepenz:materialdrawer:4.6.4@aar'
 ```
